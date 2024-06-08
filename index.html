@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Photo Gallery</title>
+    <title>Interactive Photo Gallery</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div class="photo-gallery">
-        <div class="photo-item" style="background-image: url('images/spotted_deer.jpeg');">
+        <div class="photo-item" style="background-image: url('images/fennec_fox.jpeg');">
             <div class="photo-info">
-                <h2>Spotted Deer</h2>
-                <p>Location: Amazon</p>
+                <h2>FENNEC FOX</h2>
+                <p>India</p>
             </div>
-            <a href="#" class="photo-link">Learn more →</a>
         </div>
         <div class="photo-item" style="background-image: url('images/humpback_whale.jpeg');">
             <div class="photo-info">
-                <h2>Humpback Whale</h2>
-                <p>Location: Pacific Ocean</p>
+                <h2>HUMPBACK WHALE</h2>
+                <p>Pacific Ocean</p>
             </div>
-            <a href="#" class="photo-link">Learn more →</a>
         </div>
         <div class="photo-item" style="background-image: url('images/common_brown_baboon.jpeg');">
             <div class="photo-info">
-                <h2>Common Brown Baboon</h2>
-                <p>Location: South Africa</p>
+                <h2>COMMON BROWN BABOON</h2>
+                <p>South Africa</p>
             </div>
-            <a href="#" class="photo-link">Learn more →</a>
+            
         </div>
-        <div class="photo-item" style="background-image: url('images/fennec_fox.jpeg');">
+        <div class="photo-item" style="background-image: url('images/spotted_deer.jpeg');">
             <div class="photo-info">
-                <h2>Fennec Fox</h2>
-                <p>Location: Sahara</p>
+                <h2>SPOTTED DEER</h2>
+                <p>Amazon</p>
             </div>
-            <a href="#" class="photo-link">Learn more →</a>
         </div>
     </div>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
